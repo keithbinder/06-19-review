@@ -30,4 +30,18 @@ class Comic
   def self.all
     CONNECTION.execute("SELECT * FROM comics;") 
   end
+  
+  # Checks if an issue is a number 1 or not.
+  #
+  # Returns a Boolean.
+  def first_issue?
+    issue_number == 1    
+  end
+  
+  # Checks to see if a comic came out on or before a given year.
+  #
+  # Returns a Boolean.
+  def vintage?
+    year <= 1982
+  end
 end
