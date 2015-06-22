@@ -1,3 +1,5 @@
+# TODO write an Instance Method that takes the current Object and creates a new row in the table using all of the Object's attributes.
+
 class Comic
   attr_reader :id
   attr_accessor :title, :issue_number, :publisher_id, :year, :box_id
